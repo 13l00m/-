@@ -5,7 +5,6 @@ import os
 class UploadFile:
     def __init__(self):
         self.bucket = getBucket()
-        self.rename = ReName
         self.predir = PreDir
         self.uploadStatus = {}
         self.prefixUploadname = getprefixUploadname()
