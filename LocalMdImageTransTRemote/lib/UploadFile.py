@@ -1,5 +1,5 @@
 from lib.OssSetting import getBucket,getprefixUploadname
-from lib.config import ReName,PreDir
+from lib.config import PreDir
 import time
 import os
 class UploadFile:
