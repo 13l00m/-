@@ -28,7 +28,6 @@ class UploadFile:
                 try:
                     with open(filePath, 'rb') as fileobj:
                         remotePath = self.getUploadName(filePath)
-                        # Seek方法用于指定从第1000个字节位置开始读写。上传时会从您指定的第1000个字节位置开始上传，直到文件结束。
                         try:
                             self.bucket.put_object(remotePath, fileobj)
                             self.uploadStatus[filePath] = {"remotePath": remotePath, "status": True, "des": "succ"}
