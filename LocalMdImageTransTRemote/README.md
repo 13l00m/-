@@ -1,5 +1,8 @@
 将本地本机更新到知识库或博客的过程中会浪费太多时间去做图片的搬运工，所以写了这个脚本，会将markdown文件中的图片转到云存储中并自动生成含远程图片的新md文件
 
+添加阿里OSS JDK参考如下：  
+https://help.aliyun.com/document_detail/85288.html  
+
 用法：  
 首先在lib.config中补全阿里云oss配置信息 
 ```
